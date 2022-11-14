@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class=" ">
+    <li style="padding: 0.5rem 2.2rem;"
+      class="flex-column  flex-sm-row flex-wrap list-group-item gap-2 d-flex justify-content-between align-items-sm-center">
+      <div class="row " style=`background-color: ${Math.floor(Math.random()*16777215).toString(16)}`>
+        <div class="col-sm-3 align-items-center bg-secondary  text-center d-flex justify-content-center "
+          style="width: 230px; border-radius: 0rem 1rem;">
+          <div class="">
+            <button class="bg-danger text-white border-0 py-2 px-5  rounded"
+              style="font-size: large;font-weight: bold;">Book <br>${price}</button>
+            <p class="text-white" style="font-weight: bold;">FLYdubai</p>
+          </div>
+        </div>
+        <div class="col-sm-2 bg-primary ">
+          <div class="">
+            <div class="card " style="width: 18rem;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item  d-flex justify-content-between">
+                  <span>${origin}</span>
+                  <span>TO</span>
+                  <span>${destination}</span>
+                </li>
+                <li class="list-group-item  d-flex justify-content-between"><span>Flight Number</span>
+                  <span>${flight_number}</span></li>
+                <li class="list-group-item  d-flex justify-content-between"> <span>Airline</span> <span>${airline}</span>
+                </li>
+                <li class="list-group-item  d-flex justify-content-between"><span>Time </span>
+                  <span>${timeConvert(duration)}</span></li>
+                <li class="list-group-item  d-flex justify-content-between">
+                   <a href="https://www.aviasales.com${link}" class="btn btn-primary">Ticket</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </li>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
